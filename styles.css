@@ -1,12 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Source+Code+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Source+Code+Pro:wght@100,200,300,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@1,200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
-
+.hamburger{
+    position: absolute;
+    z-index: 9;
+    cursor: pointer;
+    top: 20px;
+    left: 10px;
+}
+.cross{
+    margin-left: 150px;
+}
+.sidebarGo{
+    transform: translate(-200px,0);
+    position: sticky;
+}
 .sidebar {
     position: absolute;
     background-color: gainsboro;
@@ -29,9 +43,8 @@
 }
 
 .main {
-   /* background-color: rgb(228, 123, 18);*/
-    width: 80vw;
-    padding-left: 100px;
+    background-color:bisque;
+    width: 100vw;
 }
 
 .container {
@@ -39,9 +52,8 @@
 }
 
 .infoContainer {
-    /*background-color: rgba(252, 106, 135, 0.747);*/
-    height: 50vh;
-    width: 65vw;
+    height: 73vh;
+    width: 100vw;
     margin:148px auto;
     display: flex;
     justify-content: space-around;
@@ -56,74 +68,284 @@
 }
 
 .devPic img {
-    height: 50vh;
+    height: 57vh;
 }
 .hello{
-    font-size: 29px;
+    font-size: 39px;
     font-weight: bold;
 }
 .name {
     color: rgb(240, 19, 63);
-    font-size: 28px;
+    font-size: 78px;
     font-weight: bold
     ;
 }
 
 .about {
     color: rebeccapurple;
-    font-size: 20px;
+    font-size: 24px;
     padding-bottom: 30px;
 }
 
+.buttons .b1{
+    background-color: rgb(166, 0, 255);
+}
+.buttons .b2{
+    background-color: rgb(19, 179, 144);
+}
 .buttons button{
-    
-    padding: 9px 9px;
+
+    padding: 19px 19px;
     border-radius: 18px;
-    font-size: 12px;
+    font-size: 17px;
     color: rgb(255, 255, 255);
-    background-color: rgb(52, 122, 124);
+
     margin:0 5px 0 0;
     cursor: pointer;
 }
 .buttons button:hover{
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.663);
     color: rgb(52, 122, 124);
 }
+
+/*Page 2- About section*/
 .infoContainer2 {
-    background-color: rgb(224, 221, 231);
-    height: 50vh;
-    width: 65vw;
-    margin:148px auto;
-    display: flex;
-    flex-direction: column;
+    background-color:#FCDA69;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
 }
-.more{
-    font-size:50px;
-    padding-bottom: 30px;
+.infoContainer2>#right{
+    position: absolute;
+    height: 80%;
+    width: 40%;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5%;
+}
+#right>.box{
+    height: 33.3%;
+    width: 100%;
+    border-top: 2px solid black;
+}
+#right>#box1>img{
+    position: absolute;
+    margin-left: 70%;
+    height: 12vh;
+    margin-top: -10%;
+}
+#right>#box2>img{
+    position: absolute;
+    margin-left: 70%;
+    height: 15vh;
+    margin-top: -10%;
+}
+#right>#box3>img{
+    position: absolute;
+    margin-left: 70%;
+    height: 20vh;
+    margin-top: -16%;
+}
+.circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5vw;
+    width: 2.5vw;
+    background-color:crimson;
+    border-radius: 50%;
+}
+.circle>i{
+    color: white;
+    font-size: 2vw;
+}
+#text1{
+    margin: 80px 30px;
+    height: 60vh;
+    width: 50%;
+    position: absolute;
+    z-index: 9;
+}
+#text1>img{
+    position: absolute;
+    height: 20vh;
+    margin-top: 14vh;
+}
+#right>h2{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 39px;
+    padding-bottom: 20px;
+    font-weight:700;
+}
+#text1>h1{
+    margin-left: 1vw;
+    margin-top: 2vw;
+    font-size: 70px;
     font-family: 'Bruno Ace SC', cursive;
 
 }
-.moreabout{
-    font-size: 18px;
-    font-family: 'Ysabeau', sans-serif;
-    font-weight: bold;
-    padding: 10px;
-
-}
-.hamburger{
-    position: absolute;
-    cursor: pointer;
-    top: 20px;
-    left: 10px;
-}
-.cross{
-    margin-left: 150px;
-}
-.sidebarGo{
-    transform: translate(-200px,0);
-    position: absolute;
+#text1>h4{
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 1vw;
 }
 
+/*Projects Section*/
+#page3{
+    background-color:rgb(248, 131, 63);
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+
+}
+#Projects{
+    display: flex;
+    height: 50%;
+    width: 90%;
+    margin:6vh  4vw;
+    justify-content: space-between;
+}
+.proj{
+    width: 32%;
+    height: 92%;
+    border-top:4px solid whitesmoke;
+    border-left: 3px solid whitesmoke;
+
+}
+.p2{
+    position: relative;
+    top: -20%;
+
+}
+.p3{
+    position: relative;
+    top: -40%;
+
+}
+#page3>h1{
+    margin-left: 4vw;
+    padding-top: 9vh;
+    font-size: 60px;
+    font-family: 'Bruno Ace SC', cursive;
+
+}
+
+.head>h2{
+    font-size: 30px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 200;
+}
+#body>h4{
+    font-size: 17px;
+    margin-top: 10px;
+    margin-left: 2px;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 200;
+}
+#body>img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.head{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+#body{
+    height: 70%;
+    width: 100%;
+}
+
+/*Page 4- ConnectWithMe*/
+#page4{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 60px;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #FCDA69;
+}
+#left1{
+    height: 70%;
+    width: 45%;
+}
+#right1{
+    position: relative;
+    height: 40vw;
+    width: 40vw;
+    border-radius: 50%;
+    border: 2px solid #000;
+}
+.line{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+    padding: 0px 30px;
+    height: 10%;
+    width: 100%;
+}
+.l1{
+    position: absolute;
+    z-index: 99;
+}
+.l2{
+    left: 10%;
+    top: 45%;
+    width: 75%;
+    border-bottom: 2px solid #000;
+    position: absolute;
+    transform: rotate(15deg);
+    transform-origin: left;
+}
+.c1{
+    height: 13vw;
+    width: 13vw;
+    background-color: rgb(121, 65, 177);
+}
+.c1>i{
+    font-size: 40px;
+}
+#text5{
+    height: 25%;
+    width: 100%;
+
+}
+#text5>h1{
+    font-size: 46px;
+    font-family: 'Bruno Ace SC', serif;
+}
+#info{
+
+    margin-top: 40px;
+    height: 50%;
+    width: 100%;
+}
+.infos{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 50%;
+    width: 100%;
+    border-top: 2px solid #000;
+    font-size: 12px;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 100;
+}
+.i1{
+    background-color: white;
+}
+.i1>i{
+    color: #000;
+}
 
 @media (max-width: 750px){
     *{
