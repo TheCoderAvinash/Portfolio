@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Source+Code+Pro:wght@300&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar {
+    background-color: gainsboro;
+    width: 177px;
+    height: auto;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.sidebar nav {
+    padding: 45px;
+}
+
+.sidebar nav ul {
+    font-size: 30px;
+    padding: 23px 0;
+}
+.sidebar nav ul a{
+    text-decoration: none;
+    color: black;
+}
+
+.main {
+   /* background-color: rgb(228, 123, 18);*/
+    width: 80vw;
+}
+
+.container {
+    display: flex;
+}
+
+.intro h2{
+    font-family: 'PT Sans', sans-serif;
+    padding-bottom: 8px;
+    margin: 13px;
+}
+.intro p{
+    font-family: 'Source Code Pro', monospace;
+    font-weight: bold;
+    padding-bottom: 10px;
+    margin: 13px;
+}
+.btn {
+    padding: 6px 12px;
+    border-radius: 11px;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    background-color: rgb(131, 142, 240);
+    margin:10px 0;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(131, 142, 240);
+}
+.skillContainer{
+    padding: 20px;
+}
+.skillItem{
+    padding: 9px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.skill{
+    width: 223px;
+    height: 24px;
+    border: 1px solid black;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.seventy5{
+    background-color: goldenrod;
+    width: 300px;
+}
+.fifty{
+    background-color: blueviolet;
+    width: 200px;
+}
+.t5{
+    background-color: brown;
+    width: 100px;
+}
+.just10{
+    background-color: coral;
+    width: 30px;
+
+}
+
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 20px;
+    left: 10px;
+}
+.cross{
+    margin-left: 150px;
+}
+.sidebarGo{
+    transform: translate(-200px,0);
+    position: absolute;
+}
+
+
+@media (max-width: 750px){
+    *{
+        background-color:rgb(2, 255, 2);
+    }
+    /*.sidebar{
+        transform: translate(-200px,0);
+        position: absolute;
+    }*/
+}
+@media (max-width: 460px){
+    *{
+        background-color:rgb(2, 255, 2);
+    
+    }
+}

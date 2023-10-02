@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Source+Code+Pro:wght@300&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar {
+    background-color: gainsboro;
+    width: 177px;
+    height: auto;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.sidebar nav {
+    padding: 45px;
+}
+
+.sidebar nav ul {
+    font-size: 30px;
+    padding: 23px 0;
+}
+.sidebar nav ul a{
+    text-decoration: none;
+    color: black;
+}
+
+.main {
+   /* background-color: rgb(228, 123, 18);*/
+    width: 80vw;
+}
+
+.container {
+    display: flex;
+}
+.form-label{
+    font-size: 20px;
+}
+.contactform{
+    padding: 144px 134px;
+    font-family: 'PT Sans', sans-serif;
+}
+.contactform h1{
+      font-family: 'Source Code Pro', monospace;
+}
+#emailHelp{
+    font-size: 11px;
+    color: midnightblue;
+    margin: 0 5px;
+}
+.clientData{
+    padding: 10px;
+    margin: 14px 0;
+    padding: 9px;
+    display: flex;
+    flex-direction: column;
+}
+.form-control{
+    border-radius: 7px;
+    padding: 5px;
+    background-color: rgb(117, 98, 122);
+    width: 22vw;
+}
+.btn {
+    padding: 6px 12px;
+    border-radius: 11px;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    background-color: rgb(131, 142, 240);
+    margin:10px 0;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(131, 142, 240);
+
+}
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 20px;
+    left: 10px;
+}
+.cross{
+    margin-left: 150px;
+}
+.sidebarGo{
+    transform: translate(-200px,0);
+    position: absolute;
+}
+
+
+@media (max-width: 750px){
+    *{
+        background-color:rgb(2, 255, 2);
+    }
+    /*.sidebar{
+        transform: translate(-200px,0);
+        position: absolute;
+    }*/
+}
