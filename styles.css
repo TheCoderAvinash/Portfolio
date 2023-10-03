@@ -7,54 +7,58 @@
     margin: 0;
     box-sizing: border-box;
 }
-.hamburger{
-    position: absolute;
-    z-index: 9;
-    cursor: pointer;
-    top: 20px;
-    left: 10px;
-}
-.cross{
-    margin-left: 150px;
-}
-.sidebarGo{
-    transform: translate(-200px,0);
-    position: sticky;
-}
-.sidebar {
-    position: absolute;
-    background-color: gainsboro;
-    height: auto;
-    font-family: 'PT Sans', sans-serif;
-    transition: transform 0.27s ease-in;
-}
 
-.sidebar nav {
-    padding: 45px;
-}
-
-.sidebar nav ul {
-    font-size: 30px;
-    padding: 23px 0;
-}
-.sidebar nav ul a{
-    text-decoration: none;
-    color: black;
-}
 
 .main {
     background-color:bisque;
     width: 100vw;
 }
-
-.container {
+.container{
+    position: relative;
     display: flex;
-}
-
-.infoContainer {
-    height: 73vh;
+    height: 100vh;
     width: 100vw;
-    margin:148px auto;
+}
+#nav>img{
+    position: absolute;
+    border-radius: 49%;
+    border: 1px solid rgb(146, 146, 146);
+    top: 52%;
+    transform: translateY(-50%);
+    width: 4.5%;
+    left: 3.6%;
+}
+.container>#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 9;
+    height: 10%;
+    width: 100vw;
+    background-color: rgb(255, 221, 180) ;
+}
+#center-nav{
+    display: flex;
+    gap: 70px;
+    padding-left: 190px;
+}
+#center-nav>a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 23px;
+    font-family: 'Source Code Pro', sans-serif;
+}
+#nav>input{
+    padding: 10px 5px;
+    border-radius: 10px;
+    border: 1px solid #dadada;
+    text-transform: uppercase;
+}
+.infoContainer {
+    height: 100vh;
+    width: 100vw;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -68,6 +72,7 @@
 }
 
 .devPic img {
+    margin-top: 30%;
     height: 57vh;
 }
 .hello{
@@ -77,8 +82,7 @@
 .name {
     color: rgb(240, 19, 63);
     font-size: 78px;
-    font-weight: bold
-    ;
+    font-weight: bold;
 }
 
 .about {
@@ -273,12 +277,12 @@
 }
 #left1{
     height: 70%;
-    width: 45%;
+    width: 55%;
 }
 #right1{
     position: relative;
-    height: 40vw;
-    width: 40vw;
+    height: 38vw;
+    width: 38vw;
     border-radius: 50%;
     border: 2px solid #000;
 }
